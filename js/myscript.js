@@ -1,42 +1,59 @@
 $(document).ready(function () { // keep this at top
+ // when any animal is clicked, make the suitable div appear
+ //added>img for image listners on the child image elements not the parent div. this is a standard way of achieving the results
+//$("p") gives you all p elements, so$("audio") will give you all audio elements. but to make that work you need an id to call it
+ $('.albumcovers>img').click(function() {
+	 // but first, hide all the divs to ensure that
+	 // only one will be open, ever
+	 hideAll();
+	 // here is a switch statement - this was in Codecademy
+	 // "Control Flow" lesson 7
+
+	 //to pause all the audio files and resetting it .
+	 // IMPORTANT because hide() won't stop the music from stop playing
+	 nextSong()
+
+	 // we can get the ID of the thing that was clicked -
+	 // switch ($(this).attr('id')) {
+
+	 // 	case '1':
+	 // 	$('#albums1').show();
+	 // 	break;
+	 // 	case '2':
+	 // 	$('#albums2').show();
+	 // 	break;
+	 // 	case '3':
+	 // 	$('#albums3').show();
+	 // 	break;
+	 // 	case '4':
+	 // 	$('#albums4').show();
+	 // 	break;
+
+	 // };
+
+	 //your entire switch statement can be reaplced by this line on code. i've changed the ids of
+	 $("audio#soundtrack"+$(this).attr('id')).parent().show()
+
+	});
+// end of function for clicking'
 
 // function to hide all divs
- function hideAll() {
-   $("#album1").hide();
-   $("#album2").hide();
-   $("#album3").hide();
-   $("#album4").hide();
- }
+function hideAll() {
+	$('#albums1').hide();
+	$('#albums2').hide();
+	$('#albums3').hide();
+	$('#albums4').hide();
+	$(".cover").hide()
+};
 
+function nextSong(){
+	$('audio').each(function(){
+		this.pause(); // Stop playing
+		this.currentTime = 0; // Reset time , comment it out if you don't want that song to start over again
+	});
+
+}
  // run that function right away
  hideAll();
- // when any animal is clicked, make the suitable div appear
- $(".cover").click(function() {
-   // but first, hide all the divs to ensure that
-   // only one will be open, ever
-   hideAll();
-   // here is a switch statement - this was in Codecademy
-   // "Control Flow" lesson 7
-
-   // we can get the ID of the thing that was clicked -
-   switch ($(this).attr("id")) {
-       case("audio").each(function() {
-    this.pause();
-    this.currentTime = 0;
-       }):
-     case "2":
-       $("#albums").slideToggle();
-       break;
-     case "1":
-       $("#albums").slideToggle();
-       break;
-     case "3":
-       $("#albums").show();
-       break;
-     case "4":
-       $("#albums").show();
-       break;
-   }
- }); // end of function for clicking'
 
 }); // end of document ready.
