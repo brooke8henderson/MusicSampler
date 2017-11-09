@@ -1,0 +1,46 @@
+html {
+  font-size: 25px;
+}
+
+header {
+	background: #FFF;
+}
+
+body {
+  background: #E6E6FA;
+  color: #000;
+  font-family: "Perpetua", "Baskerville","Big Caslon","Palatino Linotype","URW Palladio L","Nimbus Roman No9 L", serif;
+  margin: 4em;
+	text-align: center;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+#albums {
+  padding: 20px;
+}
+
+#credit{
+	color: #20B2AA;
+}
+
+  footer {
+    color: #000;
+    background: #FFF;
+  }
+
+  a {
+    color: #5F9EA0;
+  }
+
+  a:hover {
+    color: #8B008B;
+  }
+
+
+@media(max-width: 600px){
+body {margin: 0; width: 90%; padding: 5%;}
+img {width: 100%; padding-top: 10px;}
+h1 {text-align: left; margin: 0 ;padding: 10px;
+font-size: 40px;}
+}
