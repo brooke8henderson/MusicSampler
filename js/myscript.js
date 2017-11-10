@@ -3,6 +3,7 @@ $(document).ready(function () { // keep this at top
  //added>img for image listners on the child image elements not the parent div. this is a standard way of achieving the results
 //$("p") gives you all p elements, so$("audio") will give you all audio elements. but to make that work you need an id to call it
  $('.albumcovers>img').click(function() {
+   // calls al images in the class for the function
 	 // but first, hide all the divs to ensure that
 	 // only one will be open, ever
 	 hideAll();
@@ -31,7 +32,8 @@ $(document).ready(function () { // keep this at top
 
 	 // };
 
-	 //your entire switch statement can be reaplced by this line on code. i've changed the ids of
+	 //the entire switch statement here instead. other one was wonky. Used the id to call the audio in the function
+   // parent in the function accesses the DOM
 	 $("audio#soundtrack"+$(this).attr('id')).parent().show()
 
 	});
@@ -49,7 +51,7 @@ function hideAll() {
 function nextSong(){
 	$('audio').each(function(){
 		this.pause(); // Stop playing
-		this.currentTime = 0; // Reset time , comment it out if you don't want that song to start over again
+		this.currentTime = 0; // Reset time , comment it out if I don't want that song to start over again
 	});
 
 }
