@@ -35,6 +35,22 @@ article {
 #big {
   width: 100%;
 }
+
+#albums1 {
+  background: #008080;
+}
+
+#albums2 {
+  background: #4B0082;
+}
+
+#albums3 {
+  background: #008B8B;
+}
+
+#albums4 {
+  background: #800080;
+}
   footer {
     color: #000;
     background: #FFF;
@@ -50,9 +66,21 @@ article {
 
 
 @media (max-width: 600px) {
-body {margin: 0; width: 90%; padding: 5%;}
-img {width: 100%; padding-top: 10px;}
-h1 {text-align: left; margin: 0 ;padding: 10px;
-font-size: 40px;}
-.albumcovers {padding: 0;}
+body {
+  margin: 0;
+  width: 90%;
+   padding: 5%;}
+img {
+  width: 100%;
+  padding-top: 10px;
+}
+h1 {
+  margin: 0 ;
+  padding: 0;
+font-size: 30px;
+}
+.albumcovers {
+  padding: 0;
+  margin: 0;
+  }
 }
