@@ -1,86 +1,91 @@
 html {
-  font-size: 25px;
+	font-size: 25px;
 }
-
 header {
 	background: #FFF;
 }
-
 body {
-  background: #E6E6FA;
-  color: #000;
-  font-family: "Perpetua", "Baskerville","Big Caslon","Palatino Linotype","URW Palladio L","Nimbus Roman No9 L", serif;
-  margin: 20px;
+	background: #E6E6FA;
+	color: #000;
+	margin: 20px;
 	text-align: center;
 	padding-left: 100px;
 	padding-right: 100px;
 }
-
 article {
-  background: #FFF;
-  padding: 20px;
-  margin: auto;
+	background: #FFF;
+	padding: 20px;
+	margin: auto;
 }
-
 .albumcovers {
-  padding: 20px;
-
+	padding: 20px;
 }
-
-#credit{
+#credit {
 	color: #20B2AA;
 }
-
-
 #big {
-  width: 100%;
+	width: 100%;
 }
-
 #albums1 {
-  background: #008080;
+	background: #008080;
 }
-
 #albums2 {
-  background: #4B0082;
+	background: #8A2BE2;
 }
-
 #albums3 {
-  background: #008B8B;
+	background: #008B8B;
 }
-
 #albums4 {
-  background: #800080;
+	background: #800080;
 }
-  footer {
-    color: #000;
-    background: #FFF;
-  }
+footer {
+	color: #000;
+	background: #FFF;
+}
+a {
+	color: #5F9EA0;
+}
+a:hover {
+	color: #8B008B;
+}
 
-  a {
-    color: #5F9EA0;
-  }
-
-  a:hover {
-    color: #8B008B;
-  }
-
-
+.cover {
+  padding-top: 20px;
+}
+#title1 {
+	color: #FFF;
+	padding-bottom: 25px;
+}
+#title2 {
+	color: #FFF;
+	padding-bottom: 25px;
+}
+#title3 {
+	color: #FFF;
+	padding-bottom: 25px;
+}
+#title4 {
+	color: #FFF;
+	padding-bottom: 25px;
+}
 @media (max-width: 600px) {
-body {
-  margin: 0;
-  width: 90%;
-   padding: 5%;}
-img {
-  width: 100%;
-  padding-top: 10px;
-}
-h1 {
-  margin: 0 ;
-  padding: 0;
-font-size: 30px;
-}
-.albumcovers {
-  padding: 0;
-  margin: 0;
-  }
+	body {
+		margin: 0;
+		width: 90%;
+		padding: 5%;
+	}
+
+	img {
+		width: 100%;
+		padding-top: 10px;
+	}
+	h1 {
+		margin: 0;
+		padding: 0;
+		font-size: 30px;
+	}
+	.albumcovers {
+		padding: 0;
+		margin: 0;
+	}
 }
