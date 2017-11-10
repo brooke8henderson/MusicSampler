@@ -1,11 +1,10 @@
-html {
-	font-size: 25px;
-}
+
 header {
 	background: #FFF;
 }
 body {
 	background: #E6E6FA;
+  box-sizing: border-box;
 	color: #000;
 	font-family: "Verdana", sans-serif;
 	margin: 20px;
@@ -72,19 +71,22 @@ a:hover {
 @media (max-width: 600px) {
 	body {
 		margin: 0;
-		width: 90%;
+		width: 100%;
 		padding: 5%;
 	}
 
 	img {
 		width: 100%;
-		padding-top: 10px;
+		padding-top: 10%;
 	}
 	h1 {
 		margin: 0;
-		padding: 0;
-		font-size: 30px;
+		padding-top: 10%;
+		font-size: 90%;
 	}
+  p {
+    font-size: 50%;
+  }
 	.albumcovers {
 		padding: 0;
 		margin: 0;
